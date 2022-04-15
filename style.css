@@ -14,6 +14,7 @@ familia tipográfica: 'Kanit', sans-serif;
 /* estilos header */
 header {
     background-color: rgb(218, 184, 139);
+    background: linear-gradient(222deg, rgba(218,184,139,0.9864320728291317) 2%, rgba(224,219,162,1) 100%);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -69,7 +70,8 @@ nav.header__menuContainer ul.header__categoriesContainer li.categories a.categor
 
 /* estilos main */
 main.home {
-    background-color: rgb(253, 246, 236);   
+    background-color: rgb(253, 246, 236);
+    background: linear-gradient(0deg, rgba(253,246,236,0.9640231092436975) 47%, rgba(224,219,162,1) 100%);   
 }
 
 main.home section.home__banner {
@@ -173,6 +175,7 @@ main.home table.table__info tbody.table__content {
 
 main.home section.buttons {
     background-color: rgb(183, 202, 219);
+    background: radial-gradient(circle, rgba(183,202,219,1) 37%, rgba(245,245,245,0.9808298319327731) 100%);
     display: flex;
     justify-content: space-evenly;
 }
@@ -223,6 +226,7 @@ main.home section.buttons article.button__link a {
 /* estilos footer */
 footer.footer {
     background-color: rgb(183, 202, 219);
+    background: radial-gradient(circle, rgba(183,202,219,1) 37%, rgba(245,245,245,0.9808298319327731) 100%);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
