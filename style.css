@@ -29,7 +29,8 @@ header div.header__logo h1.header__title {
 .logo__imagen {
     width: 200px;
     height: 200px;
-    margin: 10px 20px 0px;
+    margin: 10px 50px 0px;
+    border-radius: 30px;
 }
 
 header div.header__logo {
@@ -52,13 +53,12 @@ nav.header__menuContainer ul.header__categoriesContainer {
 }
 
 nav.header__menuContainer ul.header__categoriesContainer li.categories {
-    background-color: rgb(183, 202, 219);
     border-radius: 15px;
     box-shadow: 2px 2px gray;
     padding: 5px 10px;
     font-family: 'Kanit', sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 nav.header__menuContainer ul.header__categoriesContainer li.categories a.categories__link { 
@@ -181,8 +181,6 @@ main.home section.buttons {
 }
 
 main.home section.buttons article.button__link {
-    background-color: rgb(183, 202, 219);
-    border: 1px solid gray;
     border-radius: 15px;
     box-shadow: 2px 2px gray;
     padding: 5px 10px;
