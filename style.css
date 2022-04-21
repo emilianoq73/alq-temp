@@ -366,32 +366,12 @@ main.menu__publicaciones article h3 {
 
 /* ESTILOS PROMOS */
 
-main.menu__promos {
+main.container {
     background-color: rgb(253, 246, 236);
+    background: linear-gradient(0deg, rgba(253,246,236,0.9640231092436975) 47%, rgba(224,219,162,1) 100%);
 }
 
-main.menu__promos h1 {
-    font-family: 'Kalam', cursiva;
-    margin: 10px 50px;
-}
 
-main.menu__promos img.imagen__banner {
-    height: 300px;
-    margin: 0 300px;
-}
-
-main.menu__promos section.promos {
-    height: 400px;
-    width: 400px;
-    border-radius: 10px;
-    margin: 20px 600px;
-}
-
-main.menu__promos section.promos img {
-    height: 350px;
-    width: 350px;
-    border-radius: 10px;
-}
 /* FIN ESTILOS PROMOS */
 
 /* ESTILOS NOSOTROS */
