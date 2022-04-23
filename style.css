@@ -69,6 +69,10 @@ header nav {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
 header nav ul {
     font-weight: 700;
 }
@@ -100,38 +104,6 @@ main.home {
 }
 
 
-#publicaciones__casas {
-    grid-area: casas;
-}
-#publicaciones__hoteles {
-    grid-area: hoteles;
-}
-#publicaciones__cabanas {
-    grid-area: cabanas;
-}
-
-main.home section.publications__container h2.publications__container--title {
-    grid-area: titulo;
-    font-size: 2,5rem;
-    font-family: 'Kanit', sans-serif;
-    text-shadow: black 4px 4px 8px;
-}
-
-main.home section.publications__container {
-    padding: 2rem;
-    display: grid; 
-    grid-template-columns: 25% 50% 25%; 
-    grid-template-rows: 50px 1fr 1fr 1fr; 
-    gap: 15px 15px; 
-    grid-template-areas: 
-        ". titulo ."
-        ". casas ."
-        ". hoteles ."
-        ". cabanas ."; 
-    justify-items: center;
-
-}
-
 @keyframes jello-horizontal {
     0% {
             transform: scale3d(1, 1, 1);
@@ -157,24 +129,19 @@ main.home section.publications__container {
   }
   
 
-main.home section.publications__container article.publications {
+.card {
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    width: 350px;
-    height: 350px;
     font-family: 'Kanit', sans-serif;
-    padding: 10px 15px;
-    margin: 20px 0;
     animation: jello-horizontal 0.9s both;
     animation-delay: 1.5s;
 }
-
-main.home section.publications__container article.publications a.publication__link {
+ 
+.btn {
     color: rgb(10, 10, 10);
     border: 2px solid black;
     border-radius: 10px;
     background-color: beige;
-    padding: 0px 5px;
     text-shadow: gray 8px 8px 8px;
     font-size: 160%;
     text-decoration: none;
@@ -182,41 +149,8 @@ main.home section.publications__container article.publications a.publication__li
     transition: all 0.5s;
     width: auto;
     height: auto;
-
 }
 
-#publicaciones__casas {
-    background-image: url(multimedios/casa.jpg);
-    background-size: 350px 350px;
-}
-#publicaciones__hoteles {
-    background-image: url(multimedios/hotel-karun.jpg);
-    background-size: 350px 350px;
-}
-#publicaciones__cabanas {
-    background-image: url(multimedios/cabana.jpg);
-    background-size: 350px 350px;
-}
-
-main.home table.table__info {
-    display: inline-block;
-    font-family: 'Kanit', sans-serif;
-    color: black;
-    margin: 10px 20px;
-}
-
-main.home table.table__info caption.table__title {
-    font-family: 'Kanit', sans-serif;
-    font-size: larger;
-    color: black;
-    margin: 5px 230px;
-    text-transform: uppercase;
-}
-
-main.home table.table__info tbody.table__content {
-    font-family: 'Kanit', sans-serif;
-    font-size: larger;
-}
 
 main.home section.buttons {
     background-color: rgb(183, 202, 219);
@@ -249,28 +183,8 @@ main.home section.buttons article.button__link a {
 
 @media only screen and (min-width: 768px) {
 
-    main.home section.publications__container {
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: 50px 1fr; 
-        gap: 15px 15px; 
-        grid-template-areas: 
-            "titulo . ."
-            "casas hoteles cabanas"; 
-    }
-
-    main.home section.publications__container article.publications:hover {
+    .col:hover {
         transform: scale(0.95);
-    }
-
-    main.home section.publications__container article.publications:hover > a {
-        transform: scale(1.4) translate(80%, 300%);
-    }
-    
-    main.home table.table__info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px 220px;
     }
 }
 
@@ -447,29 +361,6 @@ main.contac__form {
     background-color: rgb(253, 246, 236);
 }
 
-main.contac__form h1 {
-    font-family: 'Kalam', cursiva;
-    margin: 10px 25px 0;
-}
-
-main.contac__form form fieldset {
-    margin: 10px 100px;
-    font-family: 'Kanit', sans-serif;
-    display: inline-block;
-    padding: 10px;
-}
-
-main.contac__form form fieldset legend {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-main.contac__form form fieldset article {
-    margin-top: 10px;
-}
-main.contac__form form fieldset textarea {
-    margin-top: 15px;
-}
 /* FIN ESTILOS CONTACTO */
 
 /* ESTILOS BASES */
