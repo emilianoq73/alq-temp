@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? familia = Kalam &family= Kanit:ital@1 & display=swap");
+/* 
+familia tipográfica: 'Kalam', cursiva; titulos
+familia tipográfica: 'Kanit', sans-serif; 
+*/
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0); }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg); }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg); } }
+
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0); }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg); }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg); } }
+
+header {
+  background-color: #dab88b;
+  background: linear-gradient(222deg, rgba(218, 184, 139, 0.986432) 2%, #e0dba2 100%);
+  position: sticky;
+  top: 0;
+  z-index: 100; }
+  header img {
+    animation: rotate-scale-up 0.65s linear both; }
+  header div.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15); }
+  header nav {
+    background-color: #f3e9dd;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); }
+    header nav ul {
+      font-weight: 700; }
+      header nav ul li {
+        border-radius: 5px;
+        margin-right: 10px; }
+        header nav ul li:hover {
+          transform: scale(1.2);
+          background-color: rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 3px gray; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: black; }
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  30% {
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+main {
+  background-color: #fdf6ec;
+  background: linear-gradient(0deg, rgba(253, 246, 236, 0.964023) 47%, #e0dba2 100%); }
+  main div.card {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Kanit', sans-serif;
+    animation: jello-horizontal 0.9s both;
+    animation-delay: 1.5s; }
+    main div.card a {
+      color: #0a0a0a;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: beige;
+      text-shadow: gray 8px 8px 8px;
+      font-size: 160%;
+      text-decoration: none;
+      position: absolute;
+      transition: all 0.5s;
+      width: auto;
+      height: auto; }
+  main section {
+    background-color: #b7cadb;
+    background: radial-gradient(circle, #b7cadb 37%, rgba(245, 245, 245, 0.98083) 100%);
+    display: flex;
+    justify-content: space-evenly; }
+    main section article {
+      border-radius: 15px;
+      box-shadow: 2px 2px gray;
+      padding: 5px 10px;
+      margin: 20px 0;
+      display: inline-block;
+      font-family: 'Kanit', sans-serif;
+      transition: all 0.5s; }
+      main section article:hover {
+        transform: scale(1.1);
+        box-shadow: 2px 3px gray; }
+      main section article a {
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none; }
+
+@media only screen and (min-width: 768px) {
+  div.col:hover {
+    transform: scale(0.95); } }
+
+footer {
+  background-color: #b7cadb;
+  background: radial-gradient(circle, #b7cadb 37%, rgba(245, 245, 245, 0.98083) 100%); }
+  footer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    font-size: 40px; }
+    footer section a {
+      color: black;
+      transition: all 0.5s; }
+      footer section a:hover {
+        transform: scale(1.2) translateY(-10px);
+        color: #3d3939; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
