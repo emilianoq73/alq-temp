@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2? familia = Kalam &family= Kanit:ital@1 & display=swap');
-/* 
-familia tipográfica: 'Kalam', cursiva; titulos
-familia tipográfica: 'Kanit', sans-serif; 
-*/
+$estilos:(
+    sombra: 5px 5px 10px rgba(0, 0, 0, 0.3),
+    redondeado: 10px,
+);
+@mixin flex-space_evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@import "generales";
+@import "fuentes";
 @import "header";
 @import "main";
 @import "footer";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+
 
 

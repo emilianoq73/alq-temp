@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? familia = Kalam &family= Kanit:ital@1 & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 /* 
 familia tipográfica: 'Kalam', cursiva; titulos
 familia tipográfica: 'Kanit', sans-serif; 
@@ -39,7 +44,8 @@ header {
     background-color: rgba(0, 0, 0, 0.1);
     border: solid rgba(0, 0, 0, 0.15);
     border-width: 1px 0;
-    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15); }
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+    font-family: 'Kalam', cursiva; }
   header nav {
     background-color: #f3e9dd;
     padding: 15px;
@@ -80,11 +86,11 @@ main {
   background: linear-gradient(0deg, rgba(253, 246, 236, 0.964023) 47%, #e0dba2 100%); }
   main div.card {
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     font-family: 'Kanit', sans-serif;
     animation: jello-horizontal 0.9s both;
     animation-delay: 1.5s; }
-    main div.card a {
+    main div.card a, main div.card footer section a a.btn-insta, footer section a main div.card a.btn-insta, main div.card footer section a a.btn-face, footer section a main div.card a.btn-face, main div.card footer section a a.btn-wsp, footer section a main div.card a.btn-wsp {
       color: #0a0a0a;
       border: 2px solid black;
       border-radius: 10px;
@@ -93,7 +99,6 @@ main {
       font-size: 160%;
       text-decoration: none;
       position: absolute;
-      transition: all 0.5s;
       width: auto;
       height: auto; }
   main section {
@@ -102,7 +107,7 @@ main {
     display: flex;
     justify-content: space-evenly; }
     main section article {
-      border-radius: 15px;
+      border-radius: 10px;
       box-shadow: 2px 2px gray;
       padding: 5px 10px;
       margin: 20px 0;
@@ -112,7 +117,7 @@ main {
       main section article:hover {
         transform: scale(1.1);
         box-shadow: 2px 3px gray; }
-      main section article a {
+      main section article a, main footer section article a a.btn-insta, footer main section article a a.btn-insta, main footer section a article a.btn-insta, footer main section a article a.btn-insta, main footer section article a a.btn-face, footer main section article a a.btn-face, main footer section a article a.btn-face, footer main section a article a.btn-face, main footer section article a a.btn-wsp, footer main section article a a.btn-wsp, main footer section a article a.btn-wsp, footer main section a article a.btn-wsp {
         color: black;
         text-transform: uppercase;
         font-weight: bold;
@@ -127,18 +132,16 @@ footer {
   background: radial-gradient(circle, #b7cadb 37%, rgba(245, 245, 245, 0.98083) 100%); }
   footer section {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     padding: 20px 0;
     font-size: 40px; }
-    footer section a {
-      color: black;
+    footer section a, footer section a a.btn-insta, footer section a a.btn-face, footer section a a.btn-wsp {
       transition: all 0.5s; }
-      footer section a:hover {
-        transform: scale(1.2) translateY(-10px);
-        color: #3d3939; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+      footer section a:hover, footer section a a.btn-insta:hover, footer section a a.btn-face:hover, footer section a a.btn-wsp:hover {
+        transform: scale(1.2) translateY(-10px); }
+      footer section a a.btn-insta {
+        color: red; }
+      footer section a a.btn-face {
+        color: blue; }
+      footer section a a.btn-wsp {
+        color: green; }

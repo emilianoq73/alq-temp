@@ -27,21 +27,20 @@
     background-color: rgb(253, 246, 236);
     background: linear-gradient(0deg, rgba(253,246,236,0.9640231092436975) 47%, rgba(224,219,162,1) 100%);
     div.card {
-        border-radius: 10px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        border-radius: map-get($estilos, redondeado);
+        box-shadow: map-get($estilos, sombra);
         font-family: 'Kanit', sans-serif;
         animation: jello-horizontal 0.9s both;
         animation-delay: 1.5s;
         a{
             color: rgb(10, 10, 10);
             border: 2px solid black;
-            border-radius: 10px;
+            border-radius: map-get($estilos, redondeado);
             background-color: beige;
             text-shadow: gray 8px 8px 8px;
             font-size: 160%;
             text-decoration: none;
             position: absolute;
-            transition: all 0.5s;
             width: auto;
             height: auto;
         }
@@ -49,10 +48,9 @@
         section{
         background-color: rgb(183, 202, 219);
         background: radial-gradient(circle, rgba(183,202,219,1) 37%, rgba(245,245,245,0.9808298319327731) 100%);
-        display: flex;
-        justify-content: space-evenly;
+        @include flex-space_evenly;
         article{
-            border-radius: 15px;
+            border-radius: map-get($estilos, redondeado);
             box-shadow: 2px 2px gray;
             padding: 5px 10px;
             margin: 20px 0;
