@@ -14,21 +14,21 @@
 </head>
 <body>
     <header class="py-2 border-bottom">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex flex-column align-items-center mb-3 mb-lg-3 me-lg-auto" href="index.html">
+        <div class="container-fluid position-sticky mb-1">
+            <a class="navbar-brand position-absolute top-50 start-50 translate-middle-x" href="index.html">
                 <img class="rounded-circle" src="multimedios/logo.png" alt="logo" width="150" height="150" id="logo-imagen">   
             </a>    
         </div>
     
-        <div class="b-example-divider"></div>
+        <div class="b-example-divider mb-5"></div>
 
-        <nav class="navbar navbar-light navbar-expand-lg">
+        <nav class="position-static navbar navbar-light navbar-expand-lg">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="collapse navbar-collapse mt-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0">
                         <ul class="nav me-auto" id="categories__header">
                             <li class="nav-item"><a href="page/publicaciones.html" class="nav-link link-dark px-2">Alquileres</a></li>
                             <li class="nav-item"><a href="https://www.google.com/travel/things-to-do?g2lb=2502548,2503771,2503781,4258168,4270442,4284970,4291517,4306835,4401769,4429192,4597339,4640247,4647135,4649665,4721475,4722435,4722900,4723331,4726607,4733706,4734960,4740430,4741664&hl=es-419&gl=ar&cs=1&ssta=1&dest_mid=/m/0ch8qm&dest_state_type=main&dest_src=ts&q=que+hacer+en+punilla+cordoba&sa=X&ved=2ahUKEwiNktG2_tD2AhXCJ7kGHTdPCvIQuL0BegQIBBAm" target="_blank" class="nav-link link-dark px-2">Que hacer?</a></li>
@@ -52,23 +52,25 @@
     
     <main class="home">
         <!-- CARROUSEL -->
-        <div id="carouselExampleSlidesOnly" class="carousel slide mb-4" data-bs-ride="carousel">
-            <div class="carousel-inner" id="carousel__inner">
-                <div class="carousel-item active">
-                    <img src="multimedios/banner.jpg" class="d-block w-100" alt="imagen paisaje">
-                </div>
-                <div class="carousel-item">
-                    <img src="multimedios/banner2.jpg" class="d-block w-100" alt="imagen paisaje">
-                </div>
-                <div class="carousel-item">
-                    <img src="multimedios/banner3.jpg" class="d-block w-100" alt="imagen paisaje">
+        <div class="container">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="carousel__inner">
+                    <div class="carousel-item active">
+                        <img src="multimedios/banner.jpg" class="d-block w-100 " alt="imagen paisaje">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="multimedios/banner2.jpg" class="d-block w-100" alt="imagen paisaje">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="multimedios/banner3.jpg" class="d-block w-100" alt="imagen paisaje">
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- PUBLICACIONES -->
         <h2 class="m-3">Tipos de alquileres:</h2>
-        <div class="row row-cols-1 row-cols-md-3 mb-3 g-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-3 g-4">
             <div class="col">
                 <div class="card" style="width: 300px; height: 300px; margin: auto;">
                     <img src="multimedios/casa.jpg" class="card-img h-100" alt="imagen__casa">
@@ -106,31 +108,33 @@
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>Thiasjiocb suhscu dgsudasd.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro possimus, illo necessitatibus ea dignissimos in ex quis odit sequi eius officia vero doloribus harum repellendus fuga consequatur temporibus excepturi qui.
+                  <strong>Te facilitamos la información de muchos hoteles, cabañas y casas para vacacionar.</strong> La información en nuestra Plataforma se basa en lo que nos dicen los Proveedores del servicio. Hacemos todo lo posible para que la información esté actualizada en todo momento, pero, siendo realistas, es posible que, por ejemplo, las descripciones de texto y las listas de las instalaciones que ofrecen los Alojamientos tarden unas horas en actualizarse.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Pagos
+                    ¿Con quién trabajamos?
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>Esjvcno sosjhs fpkd vfsaday.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam excepturi nobis ex eligendi eum. Saepe perferendis accusamus non amet quam sit, nesciunt aliquid quibusdam alias quia! Molestiae ad quibusdam molestias.
+                  <strong>Solo se van a mostrar en nuestra Plataforma a los Proveedores del servicio que tengan una relación contractual con nosotros..</strong> No somos propietarios de ningún Alojamiento, somos empresas separadas que han acordado trabajar entre sí de cierta manera.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Ayuda y asesoramiento si pasa algo inesperado
+                    ¿Cómo ganamos dinero?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>Flajubcubhs uhsucgha ahsu ugugs.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quas corporis aut ab, distinctio voluptas ea non autem consequuntur cumque asperiores earum animi temporibus sunt facere fugiat at ex reprehenderit?
+                  <strong>No compramos ni (re)vendemos ningún producto o servicio.</strong> Una vez finalizada tu estadía, el Proveedor del servicio simplemente nos paga una comisión.
+
+                  Y no te cobramos ninguna tasa de reserva en absoluto.
                 </div>
               </div>
             </div>

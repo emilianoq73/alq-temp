@@ -65,31 +65,15 @@ header {
 .navbar-light .navbar-nav .nav-link {
   color: black; }
 
-@keyframes jello-horizontal {
-  0% {
-    transform: scale3d(1, 1, 1); }
-  30% {
-    transform: scale3d(1.25, 0.75, 1); }
-  40% {
-    transform: scale3d(0.75, 1.25, 1); }
-  50% {
-    transform: scale3d(1.15, 0.85, 1); }
-  65% {
-    transform: scale3d(0.95, 1.05, 1); }
-  75% {
-    transform: scale3d(1.05, 0.95, 1); }
-  100% {
-    transform: scale3d(1, 1, 1); } }
-
 main {
   background-color: #fdf6ec;
   background: linear-gradient(0deg, rgba(253, 246, 236, 0.964023) 47%, #e0dba2 100%); }
+  main div.col {
+    transition: all 0.5s; }
   main div.card {
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    font-family: 'Kanit', sans-serif;
-    animation: jello-horizontal 0.9s both;
-    animation-delay: 1.5s; }
+    font-family: 'Kanit', sans-serif; }
     main div.card a, main div.card footer section a a.btn-insta, footer section a main div.card a.btn-insta, main div.card footer section a a.btn-face, footer section a main div.card a.btn-face, main div.card footer section a a.btn-wsp, footer section a main div.card a.btn-wsp {
       color: #0a0a0a;
       border: 2px solid black;
@@ -101,6 +85,8 @@ main {
       position: absolute;
       width: auto;
       height: auto; }
+    main div.card .card-body {
+      background-color: #f3e9dd; }
   main section {
     background-color: #b7cadb;
     background: radial-gradient(circle, #b7cadb 37%, rgba(245, 245, 245, 0.98083) 100%);
@@ -125,7 +111,7 @@ main {
 
 @media only screen and (min-width: 768px) {
   div.col:hover {
-    transform: scale(0.95); } }
+    transform: scale(1.1); } }
 
 footer {
   background-color: #b7cadb;
