@@ -1,37 +1,14 @@
 
-@keyframes jello-horizontal {
-    0% {
-            transform: scale3d(1, 1, 1);
-    }
-    30% {
-            transform: scale3d(1.25, 0.75, 1);
-    }
-    40% {
-            transform: scale3d(0.75, 1.25, 1);
-    }
-    50% {
-            transform: scale3d(1.15, 0.85, 1);
-    }
-    65% {
-            transform: scale3d(0.95, 1.05, 1);
-    }
-    75% {
-            transform: scale3d(1.05, 0.95, 1);
-    }
-    100% {
-            transform: scale3d(1, 1, 1);
-    }
-  }
-
   main{
     background-color: rgb(253, 246, 236);
     background: linear-gradient(0deg, rgba(253,246,236,0.9640231092436975) 47%, rgba(224,219,162,1) 100%);
+    div.col {
+        transition: all 0.5s;
+    }
     div.card {
         border-radius: map-get($estilos, redondeado);
         box-shadow: map-get($estilos, sombra);
         font-family: 'Kanit', sans-serif;
-        animation: jello-horizontal 0.9s both;
-        animation-delay: 1.5s;
         a{
             color: rgb(10, 10, 10);
             border: 2px solid black;
@@ -43,6 +20,9 @@
             position: absolute;
             width: auto;
             height: auto;
+        }
+        .card-body {
+            background-color: rgb(243, 233, 221);
         }
     }
         section{
@@ -75,6 +55,6 @@
   @media only screen and (min-width: 768px) {
 
     div.col:hover {
-        transform: scale(0.95);
+        transform: scale(1.1);
     }
 }
